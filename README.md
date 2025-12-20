@@ -52,7 +52,7 @@ Se han digitalizado los instrumentos "Gold Standard" respetando su literalidad y
 
 **No requiere instalación.**
 
-1. Descargue el archivo ReumaCare\_Clinical\_Suite\_v3.9.1.html.  
+1. Descargue el archivo index.html.  
 2. Haga doble clic para abrirlo en su navegador web preferido.  
 3. En la pantalla de bienvenida, introduzca su nombre y centro (se guardarán localmente para futuros informes).  
 4. Comience la consulta.
