@@ -1,77 +1,133 @@
-# **ReumaCare | Clinical Suite**
+# ReumaCare Andalucia
 
-**Soporte Integral para la Consulta de Enfermería Reumatológica**
+Herramienta web de apoyo a la consulta de enfermeria reumatologica en Andalucia.
 
-## **📋 Descripción Ejecutiva**
+La aplicacion funciona en una unica pagina HTML y centraliza protocolos asistenciales, escalas clinicas, alertas, situaciones especiales, fichas tecnicas oficiales y exportacion de informes.
 
-**ReumaCare** es un **Sistema de Soporte a la Decisión Clínica (CDSS)** ligero, diseñado específicamente para optimizar el flujo de trabajo de la Enfermería de Práctica Avanzada en Reumatología.
+## Archivo de referencia
 
-Esta herramienta aborda la necesidad de estandarizar los cuidados, asegurar la captura de datos clínicos rigurosos (Clinimetría y PROs) y mejorar la eficiencia en la consulta, todo ello bajo una interfaz de "Carga Cognitiva Mínima" que permite al profesional centrarse en el paciente, no en la pantalla.
+- Archivo operativo actual: `index.html`
+- `ReumaCare_vKimi_2.html` es equivalente al `index.html` usado como base de trabajo
+- El resto de HTML de la carpeta son versiones historicas o intermedias
 
-## **✨ Propuesta de Valor**
+## Patologias incluidas
 
-* **Rigor Clínico Absoluto:** Integración literal de cuestionarios validados internacionalmente (sin resúmenes ni interpretaciones subjetivas).  
-* **Privacidad "Zero-Trust":** Arquitectura 100% del lado del cliente. Los datos del paciente **nunca** salen del dispositivo; residen exclusivamente en la memoria temporal del navegador mientras dura la sesión.  
-* **Interoperabilidad Manual:** Generación de informes en texto plano (para portapapeles) y PDF estructurados para facilitar el volcado en la Historia Clínica Electrónica del hospital.  
-* **Independencia Tecnológica:** Es un archivo único (.html). No requiere instalación, servidores, ni permisos del departamento de IT. Funciona en cualquier navegador moderno (Chrome, Edge, Safari, Firefox).
+- Espondiloartritis Axial (EA)
+- Artritis Psoriasica (APs)
+- Artritis Reumatoide (AR)
+- Lupus Eritematoso Sistemico (LES)
+- Sindrome de Sjogren (SS)
+- Vacunacion en paciente reumatologico/inmunosuprimido
 
-## **🏥 Alcance Clínico**
+## Tipos de visita
 
-La suite cubre los protocolos de actuación para las cuatro patologías reumatológicas más prevalentes:
+- Inicio de enfermedad / tratamiento
+- Educacion terapeutica
+- Seguimiento telefonico postinicio
+- Seguimiento regular
+- Atencion de brote
+- Control vacunal
 
-1. **Espondiloartritis Axial (EA)**  
-2. **Artritis Psoriásica (APs)**  
-3. **Artritis Reumatoide (AR)**  
-4. **Lupus Eritematoso Sistémico (LES)**
+## Funcionalidades clinicas
 
-### **Tipos de Visita Estandarizados**
+- Checklists estructurados por patologia y tipo de visita
+- Registro de EVA de dolor y EVA global del paciente, con pregunta visible de apoyo para la entrevista clinica
+- Calculadoras clinicas integradas y coloreadas por puntos de corte
+- Badges de resultado en botones de acceso a escalas
+- Alertas clinicas dinamicas segun resultados
+- Situaciones especiales con panel lateral:
+  - infecciones
+  - embarazo y lactancia
+  - cirugia / perioperatorio
+  - riesgo cardiovascular
+- Panel lateral de fichas tecnicas oficiales CIMA/AEMPS por patologia
+- Buscador rapido para localizar visitas, indices, situaciones especiales, secciones y fichas tecnicas
+- Exportacion a:
+  - PDF
+  - informe TXT copiable al portapapeles
 
-* Inicio de Enfermedad / Tratamiento Biológico.  
-* Educación Terapéutica.  
-* Seguimiento Telefónico Post-Inicio (6 semanas).  
-* Seguimiento Regular (Control de crónicos).  
-* Atención de Brote / Urgencia.
+## Indices y escalas integrados
 
-## **🧮 Índices y Calculadoras Integradas**
+Segun patologia y contexto asistencial:
 
-Se han digitalizado los instrumentos "Gold Standard" respetando su literalidad y algoritmos de puntuación:
+- BASDAI
+- BASFI
+- ASDAS
+- ASAS Health Index
+- DAPSA
+- PSAID
+- HAQ-DI
+- DAS28
+- RAPID3
+- SLEDAI-2K
+- SLICC/SDI
+- ESSPRI
+- ESSDAI
+- EVA de sequedad oral/ocular
+- Morisky-Green
+- MARS-5
 
-* **Actividad de la Enfermedad:**  
-  * **BASDAI:** (Bath Ankylosing Spondylitis Disease Activity Index) \- Escala numérica 0-10.  
-  * **RAPID3:** (Routine Assessment of Patient Index Data 3\) \- Algoritmo completo.  
-  * **SLEDAI-2K:** (Systemic Lupus Erythematosus Disease Activity Index) \- Con *toggle* para disponibilidad de analítica.  
-* **Calidad de Vida e Impacto:**  
-  * **PsAID-12:** (Psoriatic Arthritis Impact of Disease) \- Cuestionario completo EULAR.  
-  * **ASAS-HI:** (ASAS Health Index) \- 17 ítems dicotómicos.  
-  * **HAQ-DI:** (Health Assessment Questionnaire) \- Versión completa con corrección por ayudas técnicas.  
-* **Adherencia Terapéutica:**  
-  * **Morisky-Green:** Test clásico de 4 ítems.  
-  * **MARS-5:** (Medication Adherence Report Scale).
+Ademas:
 
-## **🚀 Instalación y Uso**
+- registro estructurado de entesitis
+  - MASES orientativo en EA
+  - LEI orientativo en APs
+- registro estructurado de dactilitis por dedos
 
-**No requiere instalación.**
+## Exportacion de informes
 
-1. Descargue el archivo index.html.  
-2. Haga doble clic para abrirlo en su navegador web preferido.  
-3. En la pantalla de bienvenida, introduzca su nombre y centro (se guardarán localmente para futuros informes).  
-4. Comience la consulta.
+Los informes generan:
 
-**Nota para uso en Tablets:** Puede guardar el archivo en la pantalla de inicio de su iPad o Tablet Android para que funcione como una App nativa a pantalla completa.
+- datos de paciente y contexto asistencial
+- indices y scores registrados
+- EVA de dolor y EVA global del paciente cuando se hayan registrado
+- hallazgos estructurados de entesitis y dactilitis con localizacion
+- alertas clinicas relevantes
+- intervenciones realizadas del checklist
 
-## **🛡️ Seguridad y Privacidad de Datos**
+No se incluyen en "intervenciones realizadas" los marcadores tecnicos internos de calculadoras (`check_calc_*`), porque el resultado del indice ya aparece en la seccion de scores.
 
-Esta herramienta ha sido desarrollada siguiendo los principios de **Privacidad por Diseño**:
+## Uso local
 
-* **Almacenamiento Local:** Utilizamos localStorage del navegador únicamente para mantener el estado durante la sesión o recordar el nombre del profesional.  
-* **Borrado Seguro:** El botón "Nuevo Paciente" o el cierre de la pestaña eliminan los datos clínicos de la memoria RAM.  
-* **Sin Nube:** No hay bases de datos externas, ni tracking, ni envíos a servidores remotos. Es un entorno cerrado y seguro.
+1. Abrir `index.html` en un navegador moderno
+2. Introducir profesional y centro
+3. Seleccionar patologia y visita
+4. Completar checklist y escalas
+5. Exportar informe si procede
 
-## **📄 Licencia y Uso**
+No requiere backend ni instalacion de dependencias.
 
-Esta herramienta es un desarrollo propietario de **Sophilux** para uso exclusivo en entornos clínicos autorizados.
+Si se quiere servir por HTTP local:
 
-* **Desarrollo y Concepto:** Silvia (Consultora Experta en Sanidad).  
-* **Estado:** Release Candidate (v3.9.1).
+```bash
+cd "Herramienta Digital"
+python3 -m http.server 4173
+```
 
-**Aviso Legal:** *ReumaCare es una herramienta de soporte a la decisión. Los cálculos y sugerencias generados no sustituyen el juicio clínico profesional. El profesional sanitario es el único responsable de verificar los datos antes de incorporarlos a la historia clínica del paciente.*
+## Publicacion
+
+Para GitHub Pages, publicar el `index.html` en la raiz del repositorio.
+
+## Fuentes de contenido
+
+- Manual base del proyecto: `Manual Práctica Avanzada en Enfermería Reumatológica_v4`
+- Fichas tecnicas oficiales: CIMA / AEMPS
+- Recomendaciones clinicas y tablas operativas actualizadas segun el contenido del manual y revisiones posteriores aplicadas en la herramienta
+
+## Autoria
+
+Autores clinicos del manual y del contenido asistencial:
+
+- Carmen Dominguez Quesada
+- Manuel Moreno Galeano
+
+Desarrollo tecnico, implementacion digital y evolucion funcional de la herramienta:
+
+- Silvia Marquez Jurado
+  contacto: `b32majus@gmail.com`
+
+## Aviso
+
+La herramienta es de apoyo a la consulta de enfermeria. No sustituye el juicio clinico ni los protocolos oficiales del centro.
+
+Las decisiones terapeuticas deben validarse con el equipo medico responsable.
